@@ -1,0 +1,1018 @@
+/*------------------ Global Styles ------------------------*/
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	/*font: sans-serif;*/
+	font-size: 1rem;
+}
+
+.clearfix:before, .clearfix:after{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix{
+	clear: both;
+	zoom: 1;
+}
+
+.wrapper{
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 1.5rem 1rem;
+}
+
+.animate{
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	display: inline-block;
+}
+
+/*----------------- Navigation Styles ----------------------*/
+
+.logo{
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-img{
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+}
+
+.logo-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.logo .info{
+	font-family: 'PT Serif', serif;
+	margin-left: 1rem;
+	margin-top: -0.25rem;
+	display: inline-block;
+	font-size: 1.5rem;
+	line-height: 1.4;
+}
+
+.logo .info a{
+	color: #000;
+}
+
+#home-page .logo .info a{
+	color: #fff;
+}
+
+.logo .info a:hover{
+	text-decoration: none;
+}
+
+.logo .nav-name{
+	font-weight: bold;
+}
+
+.logo .role{
+	display: block;
+}
+
+.nav{
+	float: right;
+	font-size: 1.25rem;
+}
+
+.nav li{
+	display: inline-block;
+	padding: 1em 0 0 1em;
+}
+
+.nav .contact{
+	display: inline-block;
+	padding: 0.7em;
+	background: #F2C903;
+	color: #fafaf9;
+	font-weight: 700;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.nav .contact:hover, .nav .contact:active{
+	background: #E8BE03;
+}
+
+#home-page .nav .icon-bar{
+	background-color: #FFF;
+}
+
+.nav .icon-bar{
+	background-color: #000;
+}
+
+.nav ul a{
+	font-family: 'Open Sans', sans-serif;
+	color: #3f3e42;
+}
+
+.nav a .active{
+	font-weight: 700;
+	color: #493C86;
+	font-size: 1.35rem;
+}
+
+
+/*------------------ Page Description Styles ---------------*/
+.page-description{
+	font-family: 'PT Serif', serif;
+	background-color: #493C86;
+	color: #F3F2F3;
+	text-align: center;
+	margin-top: 1rem;
+	padding: 9em 0;
+}
+
+.page-description h2{
+	font-weight: 700;
+	font-size: 3.5rem;
+}
+
+.page-description h3{
+	font-size: 3rem;
+}
+
+/*----------------- Home Page Styles ------------------------*/
+#home-page{
+	background: url("../assets/images/bg-img.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)), url("../assets/images/bg-img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	min-height: 100%;
+}
+
+#home-page .nav a{
+	color: #fff;
+}
+
+#home-page .nav a:nth-child(1){
+	font-weight: 700;
+	font-size: 1.35rem;
+}
+
+.content{
+	margin: 14.9rem auto 15rem 0;
+	text-align: center;
+}
+
+.content h1{
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
+	font-size: 5rem;
+	padding-bottom: 3rem;
+}
+
+.content h3{
+	font-family: 'PT Serif', serif;
+	font-size: 2.75rem;
+	padding-bottom: 3rem;
+	line-height: 1.3
+}
+
+/*.content .dot{
+	display: inline-block;
+	padding: 0 0.5rem;
+	font-weight: 700;
+	font-size: 3rem;
+}*/
+
+.content .btn-holder{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.content .btn{
+	display: inline-block;
+	border-radius: 30px;
+	padding: 1.25rem 2.25rem;
+}
+
+.content .fa{
+	margin-left: 2rem;
+}
+
+.content .works-btn{
+	font-family: 'Open Sans', sans-serif;
+	background: #493C86;
+	color: #F3F2F3;
+	float: left;
+	margin-left: 1rem;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.content .contact-btn{
+	font-family: 'Open Sans', sans-serif;
+	background: #F2C903;
+	color: #fafaf9;
+	float: right;
+	margin-right: 1rem;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.content .works-btn:hover, .content .works-btn:active{
+	background: #3C3074;
+}
+
+.content .contact-btn:hover, .content .contact-btn:active{
+	background: #E8BE03;
+}
+
+/*--------------------- About Styles -----------------------*/
+#about-page .content{
+	margin-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.about-me .profile-img{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 3rem auto;
+}
+
+.profile-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.about-me h3{
+	font-weight: 700;
+	line-height: 0;
+	font-size: 2.5rem;
+}
+
+.about-me .description{
+	font-family: 'Open Sans', sans-serif;
+	width: 80%;
+	margin: 0 auto 3em auto;
+	font-size: 2rem;
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.skills h3{
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+.skills .front-end, .skills .design{
+	font-size: 2rem;
+}
+
+.skills .front-end{
+	margin-bottom: 1.5em;
+}
+
+.skills .header, .skills .logos{
+	display: table-cell;
+	vertical-align: middle;
+	margin-bottom: 0.5em;
+}
+
+.skills .header{
+	font-family: 'PT Serif', serif;
+	font-size: 2.25rem;
+	width: 30%;
+	margin-left: 9%;
+	display: inline-block;
+	text-align: left;
+	font-weight: bold;
+}
+
+.skills .logos{
+	width: 58%;
+	display: inline-block;
+	vertical-align: center;
+	font-size: 6rem;
+	color: #493C86;
+	position: relative;
+}
+
+.skills .skills-logo{
+	position: relative;
+	display: inline-block;
+}
+
+.skills .animate:hover{
+	bottom: 4px;
+	right: 4px;
+	text-shadow: 8px 8px 5px #888888;
+}
+
+.skills .hover-text{
+	position: absolute;
+	bottom: -5px;
+	left: 28%;
+	font-size: 1rem;
+	visibility: hidden;
+}
+
+.hover-text:nth-of-type(1){
+	left: 15%;
+	background-color: #000;
+}
+
+.skills .skills-logo:hover > .hover-text{
+	visibility: visible;
+}
+
+.skills .description{
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	width: 80%;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+/*-------------------- Portfolio Styles --------------------*/
+#portfolio-page .content{
+	width: 90%;
+	text-align: left;
+	margin: 8rem auto;
+	padding: 0 2rem 5rem 2rem;
+}
+
+#portfolio-page .content h3{
+	font-weight: 700;
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+}
+
+.works{
+	position: relative;
+	width: 30%;
+	height: 27rem;
+	border: 1px solid #3f3e42;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 2rem 2%;
+}
+
+.works:hover{
+	box-shadow: 8px 8px 10px #888888;
+	bottom: 4px;
+	right: 4px;
+}
+
+.works:nth-child(1), .works:nth-child(2), .works:nth-child(3){
+	margin-top: 0;
+}
+
+.works:nth-child(1), .works:nth-child(3n+1){
+	margin-left: 0;
+}
+
+.works:nth-child(3n){
+	margin-right: 0;
+}
+
+.work-body{
+	width: 100%;
+	height: 82%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.excel .work-body{
+	background-color: rgb(0, 134, 65);
+	font-size: 5rem;
+	color: #fff;
+	text-align: center;
+	padding-top: 23%;
+	padding-right: 5%;
+}
+
+.work-body img{
+	width: 100%;
+	height: 100%;
+}
+
+.work-title{
+	text-align: center;
+	color: #F3F2F3;
+	background-color: #493C86;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+#portfolio-page .work-title h3{
+	font-size: 1.75rem;
+	font-weight: 700;
+	margin: 0;
+	padding: 0.75em 0.5em;
+}
+
+.works .view-more{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 82%;
+	top: 0;
+	left: 0;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.3)
+}
+
+.view-more span{
+	display: block;
+	position: relative;
+	top: 31%;
+	text-align: center;
+	width: 9rem;
+	height: 9rem;
+	line-height: 9rem;
+	font-size: 1.25rem;
+	font-weight: 700;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	background-color: #F2C903;
+	color: #fafaf9;
+	margin: 0 auto;
+}
+
+.works:hover > .view-more{
+	display: block;
+}
+
+.personal{
+	margin-top: 3.5rem;
+}
+
+/*------------------ Modal/Carousel Styles -------------------*/
+.modal-header{
+	border-bottom: 0;
+	background-color: #F3F2F3;
+}
+
+.modal-body{
+	padding: 2rem 4rem 4rem 4rem;
+	background-color: #F3F2F3;
+}
+
+.modal-work-title{
+	background-color: #F3F2F3;
+	padding: 1rem 4rem 1rem 4rem;
+}
+
+.modal-title{
+	font-family: 'PT Serif', serif;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.carousel-indicators{
+	bottom: -5rem;
+}
+
+.carousel-indicators li{
+	border: 1px solid #3f3e42;
+}
+
+.carousel-indicators .active{
+	background-color: #493C86;
+}
+
+.carousel-indicators li, .carousel-indicators .active{
+	margin: 0 0.4rem;
+}
+
+.carousel-inner{
+	width: 100%;
+	height: auto;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin-bottom: 6.5rem;
+}
+
+.carousel-inner img{
+	width: 100%;
+}
+
+.carousel-control{
+	border-radius: 6px;
+}
+
+.btn-div{
+	margin: 2rem 0 2.5rem 0;
+}
+
+.view{
+	background-color: #F2C903;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	padding: 1.25rem 2rem;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #fafaf9;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.view .fa{
+	margin-left: 2rem;
+}
+
+.view:hover{
+	background: #E8BE03;
+}
+
+.project-overview h4, .technologies h4{
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
+	font-size: 2rem;
+	margin: 2rem 0 1rem 0;
+}
+
+.technologies-logos span{
+	font-size: 5rem;
+	color: #493C86;
+	margin: 1.5rem 0.75rem;
+}
+
+.technologies-logos .js-logo{
+	margin-left: 1.25rem;
+}
+
+.project-description, .testimonial{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+}
+
+.testimonial{
+	margin-top: 4rem;
+}
+
+/*--------------------- Contact Syles -----------------------*/
+#contact-page .content{
+	text-align: left;
+	width: 65%;
+	margin: 10rem auto 5rem auto;
+}
+
+.contact-header h4{
+	font-family: 'PT Serif', serif;
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+}
+
+.contact-header p{
+	font-size: 2rem;
+	margin-bottom: 1em;
+}
+
+.content .email-btn{
+	padding: 1.5rem 3.5rem;
+	background-color: #F2C903;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	font-size: 1.5rem;
+	color: #fafaf9;
+	margin-bottom: 2.25rem;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.email-btn .fa{
+	margin-left: -0.5rem;
+	margin-right: 2rem;
+}
+
+.email-btn:hover{
+	background: #E8BE03;
+}
+
+.social{
+	font-size: 4rem;
+	color: #493C86;
+}
+
+.social a{
+	position: relative;
+}
+
+.social a:hover, .social a:active, .social a:focus{
+	text-decoration: none;
+}
+
+.social .animate:hover{
+	bottom: 4px;
+	right: 4px;
+	text-shadow: 8px 8px 5px #888888;
+}
+
+.social .fa-instagram{
+	margin-left: 0;
+}
+
+/*----------------------- Media Queries ---------------------*/
+@media only screen and (max-width : 992px){
+	/*----------------- Portfolio Styles -------------------*/
+	.works{
+		width: 45%;
+		height: 23rem;
+		margin: 2em 0;
+	}
+
+	.works:nth-child(odd){
+		margin-left: 0;
+		margin-right: 2.5%;
+	}
+
+	.works:nth-child(even){
+		margin-right: 0;
+		margin-left: 2.5%;
+	}
+
+	#portfolio-page .work-title h3{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis; 
+		padding: 0.55em 0.5em;
+	}
+
+	.view-more span{
+		top: 33%;
+		width: 7rem;
+		height: 7rem;
+		line-height: 7rem;
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width : 768px){
+	.content .btn-holder{
+		width: 90%;
+	}
+
+	.nav .navbar-toggle{
+		display: none;
+	}
+
+	.nav .navbar-toggle .icon-bar{
+		display: none;
+	}
+
+	.nav .collapse{
+		display: inline-block;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width : 539px){
+	.logo-img{
+		width: 45px;
+		height: 45px;
+	}
+
+	.logo .info{
+		margin-left: 0.75rem;
+		font-size: 1.3rem;
+		line-height: 1.2;
+	}
+
+	.nav .navbar-toggle{
+		display: none;
+	}
+
+	.nav .navbar-toggle{
+		display: block;
+		margin-top: 5px;
+	}
+
+	.nav .navbar-toggle .icon-bar{
+		display: block;
+		width: 18px;
+	}
+
+	.nav .container-fluid{
+		width: 100%;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav .collapse, .nav .collapsing{
+		display: none;
+		box-shadow: none;
+		position: absolute;
+		top: 75px;
+		right: 0.1px;
+		width: 100%;
+		padding: 1rem;
+		background-color: #fff;
+		text-align: center;
+	}
+
+	.nav .collapse{
+		border: 1px solid #3f3e42;
+		border-radius: 5px;
+	}
+
+	.nav .collapse.in {
+	  display: block;
+	  box-shadow: none;
+	}
+
+	.nav ul a {
+		padding: 1rem 0;
+		display: block;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	}
+
+	#home-page .nav li a{
+		color: #3f3e42;
+	}
+
+	.nav li:last-child{
+		padding: 0;
+	}
+
+	.nav a:hover .active{
+		color: #F3F2F3;
+	}
+
+	.nav a:hover{
+		background-color: #3f3e42;
+		cursor: pointer;
+		color: #F3F2F3;
+	}
+
+	.nav a:last-child{
+		padding: 0;
+	}
+
+	.nav a:last-child li, .nav .contact{
+		width: 100%;
+	}
+
+	.page-description{
+		padding: 10em 2em;
+	}
+
+	.page-description h2{
+		font-size: 3rem;
+	}
+
+	.page-description h3{
+		font-size: 2.5rem;
+	}
+
+	/*------------------- Home Page ----------------------*/	
+	#home-page .nav a{
+		color: #3f3e42;
+	}
+
+	.content{
+		margin: 16.9rem auto 12rem 0;
+	}
+
+	.content h1{
+		font-size: 4rem;
+		padding-bottom: 3rem;
+	}
+
+	.content h3{
+		font-size: 1.75rem;
+		padding-bottom: 3rem;
+		line-height: 1.3;
+	}
+
+	.content .works-btn{
+		float: none;
+	}
+
+	.content .contact-btn{
+		display: none;
+		float: none;
+	}
+
+	/*----------------- About Styles ----------------------*/
+	#about-page .content{
+		padding-bottom: 5rem;
+	}
+
+	.about-me h3{
+		line-height: 0;
+		font-size: 2.3rem;
+	}
+
+	.about-me .description{
+		margin: 1em auto 3em auto;
+		font-size: 1.75rem;
+		line-height: 1.5;
+	}
+
+	.skills h3{
+		font-size: 2.3rem;
+	}
+
+	.skills .front-end, .skills .design{
+		font-size: 1.75rem;
+	}
+
+	.skills .front-end{
+		margin-bottom: 2em;
+	}
+
+	.skills .header, .skills .logos{
+		display: block;
+		margin-bottom: 0.5em;
+	}
+
+	.skills .header{
+		width: 80%;
+		display: block;
+		margin: 1em auto;
+	}
+
+	.skills .logos{
+		width: 80%;
+		display: block;
+		font-size: 6rem;
+		margin: 0.1em auto;
+		text-align: left;
+	}
+
+	.skills .description{
+		line-height: 1.5;
+	}
+
+	/*----------------- Portfolio Styles -------------------*/
+	#portfolio-page .content{
+		padding-bottom: 2rem;
+	}
+
+	.works{
+		display: block;
+		width: 90%;
+		margin: 3rem auto;
+	}
+
+	.works:nth-child(odd){
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.works:nth-child(even){
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/*------------------- Modal/Carousel ---------------------*/
+	.modal-title{
+		font-size: 1.75rem;
+	}
+
+	.carousel-indicators{
+		bottom: -4rem;
+	}
+
+	.carousel-inner{
+		height: auto;
+		margin-bottom: 5rem;
+	}
+
+	.project-overview h4, .technologies h4{
+		font-size: 1.75rem;
+		margin: 2.5rem 1rem 1.25rem 1rem;
+	}
+
+	.project-description, .testimonial{
+		font-size: 1.25rem;
+	}
+
+	.project-description{
+		margin-left: 1rem;
+	}
+
+	.technologies-logos span{
+		font-size: 4rem;
+		margin: 1.5rem 0.5rem;
+	}
+
+	.technologies-logos .js-logo{
+		margin-left: 1.1rem;
+	}
+
+	.project-description, .testimonial{
+		font-size: 1.5rem;
+	}
+
+	.view{
+		padding: 1rem 1.5rem;
+		font-size: 1.25rem;
+	}
+
+	/*---------------------- Contact -----------------------*/
+	#contact-page .content{
+		width: 80%;
+		margin: 7rem auto 5rem auto;
+	}
+
+	.contact-header h4{
+		font-size: 3rem;
+	}
+
+	.contact-header p{
+		font-size: 1.75rem;
+		margin-bottom: 1.5em;
+		line-height: 1.5;
+	}
+
+	.content .email-btn{
+		padding: 1.25rem 3rem;
+		font-size: 1.5rem;
+		margin-bottom: 2.25rem;
+	}
+
+	.social{
+		font-size: 3rem;
+	}
+
+
+@media only screen and (max-width : 480px){
+	/*------------------- Home Page ----------------------*/	
+	#home-page .content{
+		margin-top: 13rem;
+	}
+
+	#home-page .content h1{
+		font-size: 3rem;
+		padding-bottom: 1.5rem;
+	}
+
+	#home-page .content h3{
+		font-size: 1.5rem;
+		padding-bottom: 2rem;
+		line-height: 1.4;
+	}
+
+	.carousel-inner{
+		height: auto;
+	}
+}
+
+@media only screen and (max-width : 320px){
+
+}
+
+@media screen and (min-aspect-ratio: 0.56), screen and (min-height: 667px){ 
+	#home-page .content{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		margin: 0;
+		width: 70%;
+	}
+
+	.content .btn-holder{
+		width: 80%;
+	}
+}
