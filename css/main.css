@@ -597,26 +597,43 @@ body{
 
 .contact-header p{
 	font-size: 2rem;
+	margin-bottom: 0.5em;
+}
+
+.contact-header p.description{
 	margin-bottom: 1em;
 }
 
-.content .email-btn{
+.content .btn{
 	padding: 1.5rem 3.5rem;
-	background-color: #F2C903;
+	margin-bottom: 2.25rem;
+	font-size: 1.5rem;5
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	font-size: 1.5rem;
 	color: #fafaf9;
-	margin-bottom: 2.25rem;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
 
-.email-btn .fa{
+.content .telegram-btn{
+	background-color: #01B9F5;
+	margin-right: 0.5em;
+}
+
+.content .email-btn{
+	background-color: #F2C903;
+	margin-left: 0.5em;
+}
+
+.email-btn .fa, .telegram-btn .fa{
 	margin-left: -0.5rem;
 	margin-right: 2rem;
+}
+
+.telegram-btn:hover{
+	background: #012B74;
 }
 
 .email-btn:hover{
@@ -648,6 +665,11 @@ body{
 
 /*----------------------- Media Queries ---------------------*/
 @media only screen and (max-width : 992px){
+	/*----------------- Home Styles -------------------*/
+	.content .btn-holder{
+		width: 90%;
+	}
+
 	/*----------------- Portfolio Styles -------------------*/
 	.works{
 		width: 45%;
@@ -698,20 +720,18 @@ body{
 		display: inline-block;
 		box-shadow: none;
 	}
+
+	/*----------------- Home Styles -------------------*/
+	.content .btn-holder{
+		width: 100%;
+	}
+
+	.btn-holder .btn{
+		font-size: 1.3rem;
+	}
 }
 
-@media only screen and (max-width : 539px){
-	.logo-img{
-		width: 45px;
-		height: 45px;
-	}
-
-	.logo .info{
-		margin-left: 0.75rem;
-		font-size: 1.3rem;
-		line-height: 1.2;
-	}
-
+@media only screen and (max-width : 558px){
 	.nav .navbar-toggle{
 		display: none;
 	}
@@ -778,7 +798,11 @@ body{
 	.nav a:hover{
 		background-color: #3f3e42;
 		cursor: pointer;
-		color: #F3F2F3;
+		color: #F3F2F3 !important;
+	}
+
+	.nav a:last-child:hover{
+		background-color: #E8BE03;
 	}
 
 	.nav a:last-child{
@@ -787,6 +811,19 @@ body{
 
 	.nav a:last-child li, .nav .contact{
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width : 539px){
+	.logo-img{
+		width: 45px;
+		height: 45px;
+	}
+
+	.logo .info{
+		margin-left: 0.75rem;
+		font-size: 1.3rem;
+		line-height: 1.2;
 	}
 
 	.page-description{
@@ -963,7 +1000,7 @@ body{
 		line-height: 1.5;
 	}
 
-	.content .email-btn{
+	.content .btn{
 		padding: 1.25rem 3rem;
 		font-size: 1.5rem;
 		margin-bottom: 2.25rem;
@@ -994,10 +1031,19 @@ body{
 	.carousel-inner{
 		height: auto;
 	}
-}
 
-@media only screen and (max-width : 320px){
+	/*------------------- Contact Page ----------------------*/
+	.contact-header p{
+		margin-bottom: 1em;
+	}
 
+	.content-header p.description {
+		margin-bottom: 1.5em;
+	}
+
+	.content .email-btn{
+		margin-left: 0em;
+	}
 }
 
 @media screen and (min-aspect-ratio: 0.56), screen and (min-height: 667px){ 
