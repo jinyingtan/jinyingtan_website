@@ -52,33 +52,41 @@ function setText(objectId,type,location){
     rawFile.send(null);
 }
 
-function setTechnologies(array){
+function setTechnologies(array,objectId){
 	array.forEach(function(element){
 		switch(element){
 			case "html":
 				var content = document.createElement("span");
 				content.innerHTML = "<i class='devicon-html5-plain-wordmark'></i>";
-				technologies.appendChild(content);
+				technologiesLogo.appendChild(content);
 				break;
 			case "css":
 				var content = document.createElement("span");
 				content.innerHTML = "<i class='devicon-css3-plain-wordmark'></i>";
-				technologies.appendChild(content);
+				technologiesLogo.appendChild(content);
 				break;
 			case "js":
 				var content = document.createElement("span");
 				content.className = "js-logo"
 				content.innerHTML = "<i class='devicon-javascript-plain'></i>";
-				technologies.appendChild(content);
+				technologiesLogo.appendChild(content);
 				break;
-			case "excel":
+			case "python":
 				var content = document.createElement("span");
-				content.innerHTML = "<i class='fa fa-file-excel-o' aria-hidden='true'></i>";
-				technologies.appendChild(content);
+				content.className = "python-logo"
+				content.innerHTML = "<i class='devicon-python-plain'></i>";
+				technologiesLogo.appendChild(content);
 				break;
+			case "firebase":
+				var content = document.createElement("span");
+				content.className = "python-logo"
+				content.innerHTML = "<img src = 'assets/images/firebase.png' alt = 'Firebase Logo'>";
+				technologiesLogo.appendChild(content);
 			default:
 		}
 	});
+
+	setText(objectId, "technologies", technologiesText);
 }
 
 function modalFunction(thisObject,objectId){
@@ -96,8 +104,8 @@ function modalFunction(thisObject,objectId){
 	modalTitle.innerHTML = notes;
 	setImage("assets/images/" + objectId + counter + ".jpg", objectId, counter, imagesPath);
 	setText(objectId, "overview", projectOverview);
-	setText(objectId, "testimonial", statement);
-	setText(objectId, "testimonee", testimonee);
+	// setText(objectId, "testimonial", statement);
+	// setText(objectId, "testimonee", testimonee);
 	viewBtn.setAttribute("target", "_blank");
 	btnContent.innerHTML = "Visit Website"
 	btnLogo.innerHTML = "<i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>";
@@ -109,9 +117,9 @@ function closeModal(){
 	carouselIndicators.innerHTML = "";
 	carouselInner.innerHTML = "";
 	projectOverview.innerHTML = "";
-	technologies.innerHTML = "";
-	statement.innerHTML = "";
-	testimonee.innerHTML = "";
+	technologiesLogo.innerHTML = "";
+	// statement.innerHTML = "";
+	// testimonee.innerHTML = "";
 	btnLogo.innerHTML = "";
 	btnContent.innerHTML = "";
 }
@@ -122,16 +130,18 @@ var carousel = document.getElementById("myCarousel");
 var carouselIndicators = document.getElementsByClassName("carousel-indicators")[0];
 var carouselInner = document.getElementsByClassName("carousel-inner")[0]; 
 var projectOverview = document.getElementsByClassName("project-description")[0];
-var technologies = document.getElementsByClassName("technologies-logos")[0];
-var statement = document.getElementsByClassName("statement")[0];
-var testimonee = document.getElementsByClassName("testimonee")[0];
+var technologiesLogo = document.getElementsByClassName("technologies-logos")[0];
+var technologiesText = document.getElementsByClassName("technologies-text")[0];
+// var statement = document.getElementsByClassName("statement")[0];
+// var testimonee = document.getElementsByClassName("testimonee")[0];
 var viewBtn = document.getElementsByClassName("view")[0]
 var btnContent = document.getElementsByClassName("btn-content")[0];
 var btnLogo = document.getElementsByClassName("btn-logo")[0];
 var closeButton = document.getElementsByClassName("close")[0];
 // var wynp = document.getElementById("wynp");
-var bookkeepExcel = document.getElementById("bookkeep_excel");
+// var bookkeepExcel = document.getElementById("bookkeep_excel");
 var portfolioSimulation = document.getElementById("portfolio_simulation");
+var forexBot = document.getElementById("forex_bot");
 
 closeButton.addEventListener("click", function () {
 	closeModal();
@@ -165,5 +175,12 @@ portfolioSimulation.addEventListener("click", function(){
 	var objectId = this.id;
 	modalFunction(this,objectId);
 	viewBtn.setAttribute("href", "https://codepen.io/tjykenth/full/bwvwjY/");
-	setTechnologies(["html","css","js"]);
+	setTechnologies(["html","css","js"],objectId);
+});
+
+forexBot.addEventListener("click", function(){
+	var objectId = this.id;
+	modalFunction(this,objectId);
+	viewBtn.setAttribute("href", "https://t.me/forex_updates_bot");
+	setTechnologies(["python", "firebase"],objectId);
 });
