@@ -252,7 +252,8 @@ body{
 /*--------------------- About Styles -----------------------*/
 #about-page .content{
 	margin-top: 8rem;
-	padding-bottom: 8rem;
+	padding-bottom: 2rem;
+	margin-bottom: 8rem;
 }
 
 .about-me .profile-img{
@@ -287,13 +288,14 @@ body{
 	font-size: 2.5rem;
 }
 
-.skills .front-end, .skills .design{
+.skills .front-end, .skills .design, .skills .others{
 	font-size: 2rem;
 }
 
-.skills .front-end{
+.skills .front-end, .skills .design{
 	margin-bottom: 1.5em;
 }
+
 
 .skills .header, .skills .logos{
 	display: table-cell;
@@ -572,7 +574,13 @@ body{
 	margin-left: 1.25rem;
 }
 
-.project-description, .testimonial{
+.technologies-logos img{
+	width: 4rem;
+	margin-left: 1rem;
+    margin-top: -1.25rem;
+}
+
+.project-description, .testimonial, .technologies-text{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5rem;
 }
@@ -870,6 +878,7 @@ body{
 	/*----------------- About Styles ----------------------*/
 	#about-page .content{
 		padding-bottom: 5rem;
+		margin-bottom: 10rem;
 	}
 
 	.about-me h3{
@@ -887,11 +896,8 @@ body{
 		font-size: 2.3rem;
 	}
 
-	.skills .front-end, .skills .design{
+	.skills .front-end, .skills .design, .skills .others{
 		font-size: 1.75rem;
-	}
-
-	.skills .front-end{
 		margin-bottom: 2em;
 	}
 
@@ -973,6 +979,10 @@ body{
 
 	.technologies-logos .js-logo{
 		margin-left: 1.1rem;
+	}
+
+	.technologies-logos img{
+		width: 3.5rem;
 	}
 
 	.project-description, .testimonial{

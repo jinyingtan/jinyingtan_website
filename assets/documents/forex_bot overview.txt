@@ -1,0 +1,1 @@
+The main purpose of creating this bot is to allow users to receive economic news information without having to download an app. I aim to provide more information on this bot beyond just having the notifications features. 

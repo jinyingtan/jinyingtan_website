@@ -1,0 +1,1 @@
+This project comprises of mainly JavaScript. The main point of the site is to do the calculation of the different parameters provided. I used mainly basic JavaScript. The layout of the website uses HTML and CSS, with CSS Bootstrap. 

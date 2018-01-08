@@ -1,0 +1,1 @@
+This bot is build using Python. For the telegram bot, I used a python telegram framework, python-telegram-bot to set up the bot. The data is stored in Firebase, using the python frame pyrebase. 
